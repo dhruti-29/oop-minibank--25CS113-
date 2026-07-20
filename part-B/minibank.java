@@ -1,0 +1,68 @@
+
+import java.util.Scanner;
+
+public class minibank {
+
+    // Record
+    record BankInfo(String name, String branch) {}
+
+    // Enum
+    enum MenuOption {
+        OPEN_ACCOUNT,
+        DEPOSIT,
+        WITHDRAW,
+        TRANSFER,
+        EXIT
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        BankInfo bank = new BankInfo("Mini Bank", "Charusat Branch");
+
+        System.out.println("=================================");
+        System.out.println("      " + bank.name());
+        System.out.println("      " + bank.branch());
+        System.out.println("=================================");
+
+        boolean running = true;
+
+        while (running) {
+
+            System.out.println("\n========= MENU =========");
+            System.out.println("1. Open Account");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Transfer");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+
+            int choice = sc.nextInt();
+
+            String message = switch (choice) {
+                case 1 -> {
+                    yield "Open Account - To be implemented in a later lab.";
+                }
+                case 2 -> {
+                    yield "Deposit - To be implemented in a later lab.";
+                }
+                case 3 -> {
+                    yield "Withdraw - To be implemented in a later lab.";
+                }
+                case 4 -> {
+                    yield "Transfer - To be implemented in a later lab.";
+                }
+                case 5 -> {
+                    running = false;
+                    yield "Thank you for using MiniBank.";
+                }
+                default -> "Invalid choice! Please try again.";
+            };
+
+            System.out.println(message);
+        }
+
+        sc.close();
+    }
+}
