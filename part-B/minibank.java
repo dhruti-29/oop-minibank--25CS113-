@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class minibank {
 
-    // Record
+    
     record BankInfo(String name, String branch) {}
 
-    // Enum
+   
     enum MenuOption {
         OPEN_ACCOUNT,
         DEPOSIT,
