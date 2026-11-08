@@ -10,7 +10,7 @@ public class MiniBank {
         BankInfo info = new BankInfo("MiniBank", "Anand");
         System.out.println("================================");
         System.out.println("       " + info.name());
-        System.out.println("       Branch: " + info.branch());
+        System.out.println("       Branch: " + info.branch()); 
         System.out.println("================================");
         boolean running=true;
         while(running) {
