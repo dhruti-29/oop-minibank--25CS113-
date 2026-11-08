@@ -6,7 +6,7 @@ import exception.BankException;
 public class MiniBank {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BankService bank = new BankService();
+        BankService bank = new BankService(); 
         BankInfo info = new BankInfo("MiniBank", "Anand");
         System.out.println("================================");
         System.out.println("       " + info.name());
