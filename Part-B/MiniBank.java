@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import model.*; 
 import service.BankService;
-import exception.BankException;
+import exception.BankException; 
 
 public class MiniBank {
     public static void main(String[] args) {
